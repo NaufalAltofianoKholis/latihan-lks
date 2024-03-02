@@ -4,6 +4,7 @@ body{
 }
 
 div{
+    border-radius: 2px;
     background-color: rgb(34, 34, 41);
     width: 300px;
     height: 250px;
