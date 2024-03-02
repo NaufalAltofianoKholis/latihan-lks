@@ -4,8 +4,8 @@ body{
 }
 
 div{
-    background-color: rgb(39, 39, 39);
-    width: 250px;
+    background-color: rgb(34, 34, 41);
+    width: 300px;
     height: 250px;
     margin-left: auto;
     margin-right: auto;
@@ -23,20 +23,24 @@ h3{
 }
 
 .instruksi{
+    margin-left: -20px;
     color: white;
     
     
 }
 
 #username{
-        margin-left: 40px;
+        width: 300px;
+        margin-left: -5px;
 }
 
 #btn{
     background-color:  red;
     color: white;   
+    width: 80px;
+    height: 30px;
     margin-top: 10px;
-    margin-left: 100px;
+    margin-left: 107px;
     
    
 
