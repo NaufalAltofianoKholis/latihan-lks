@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading Animation</title>
+    <style type="text/css">
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+      #main-div {
+        width: 150px;
+        height: 150px;
+        background-color: lightgray;
+        margin: auto;
+        margin-top: 15%;
+      }
+
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      .lingkaran {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        float: left;
+        margin: 12px;
+      }
+
+      .warna1 {
+        background-color: red;
+      }
+      .warna2 {
+        background-color: green;
+      }
+      .warna3 {
+        background-color: yellow;
+      }
+      .warna4 {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="main-div" class="clearfix">
+        <div class="lingkaran warna1"></div>
+        <div class="lingkaran warna2"></div>
+        <div class="lingkaran warna3"></div>
+        <div class="lingkaran warna4"></div>
+      </div>
+    </div>
+  </body>
+</html>
