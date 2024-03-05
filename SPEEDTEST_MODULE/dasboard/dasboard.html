@@ -12,35 +12,24 @@
         box-sizing: border-box;
       }
 
-      .clearfix::after {
-        content: "";
-        display: block;
-        clear: both;
-      }
-
       #header {
         width: 100%;
         min-height: 50px;
         background-color: rgb(0, 191, 255);
       }
-      .kalimat {
+      .header-div {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15%;
+      }
+
+      .right-div {
+        display: flex;
+      }
+
+      .teks {
+        padding: 20px;
         color: white;
-        float: left;
-      }
-      .kalimat:nth-child(1) {
-        padding-left: 10%;
-        min-height: 50px;
-        line-height: 50px;
-      }
-      .kalimat:nth-child(2) {
-        padding-left: 40%;
-        padding-right: 5%;
-        min-height: 50px;
-        line-height: 50px;
-      }
-      .kalimat:nth-child(3) {
-        min-height: 50px;
-        line-height: 50px;
       }
 
       #dasboard {
@@ -55,6 +44,7 @@
       #konsul-div {
         padding-left: 10%;
       }
+
       #konsul-div2 {
         border: 1px solid lightgray;
         width: 250px;
@@ -78,13 +68,35 @@
         padding-left: 10px;
         color: rgb(86, 213, 255);
       }
+
+      #vaccination-div {
+        padding: 0 10%;
+      }
+      #teks-bawah {
+        font-weight: bold;
+        width: 100%;
+        min-height: 50px;
+        line-height: 50px;
+        padding-left: 20px;
+        margin-top: 10px;
+        color: rgb(81, 72, 0);
+        background-color: rgb(255, 244, 157);
+      }
     </style>
   </head>
   <body>
-    <div id="header" class="clearfix">
+    <!-- <div id="header" class="clearfix">
       <p class="kalimat"><b>vaccination platform</b></p>
       <p class="kalimat"><b>Marsito kusnawati</b></p>
       <p class="kalimat"><b>Log out</b></p>
+    </div> -->
+
+    <div id="header" class="header-div">
+      <p class="teks"><b>vaccination platform</b></p>
+      <div class="right-div">
+        <p class="teks"><b>Marsito kusnawati</b></p>
+        <p class="teks"><b>Log out</b></p>
+      </div>
     </div>
 
     <div>
@@ -99,9 +111,12 @@
           <p id="request-konsul">+Request Consultation</p>
         </div>
       </div>
-      <div></div>
-      <h2>My vaccination</h2>
-      Your consultation must be approved by doctor to get the vaccine
+      <div id="vaccination-div">
+        <h2>My vaccination</h2>
+        <p id="teks-bawah">
+          Your consultation must be approved by doctor to get the vaccine
+        </p>
+      </div>
     </div>
   </body>
 </html>
