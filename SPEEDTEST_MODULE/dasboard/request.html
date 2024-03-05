@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>request</title>
+    <style type="text/css">
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial;
+        box-sizing: border-box;
+      }
+
+      #header {
+        width: 100%;
+        min-height: 50px;
+        background-color: rgb(0, 191, 255);
+      }
+      .header-div {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15%;
+      }
+
+      .right-div {
+        display: flex;
+      }
+
+      .teks {
+        padding: 20px;
+        color: white;
+      }
+
+      #dasboard {
+        width: 100%;
+        min-height: 150px;
+        line-height: 150px;
+        background-color: rgb(238, 238, 238);
+        margin-bottom: 2%;
+        padding-left: 20%;
+      }
+
+      #isi {
+        margin-right: 20%;
+        margin-left: 20%;
+      }
+
+      .row-3 {
+        width: 400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+
+      .row-3-2{
+        padding-right: 50px;
+      }
+
+      .row-5 {
+        width: 400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+      .row-5-2{
+        padding-right: 50px;
+      }
+
+      #teks-2 {
+        margin-top: 20px;
+      }
+
+     #btn{
+        border: none;
+        border-radius: 3px;
+        margin-top: 20px;
+        width: 100px;
+        height: 30px;
+        color: white;
+        background-color: rgb(0, 183, 255);
+     }
+      
+    </style>
+  </head>
+  <body>
+    <div id="header" class="header-div">
+      <p class="teks"><b>vaccination platform</b></p>
+      <div class="right-div">
+        <p class="teks"><b>Marsito kusnawati</b></p>
+        <p class="teks"><b>Log out</b></p>
+      </div>
+    </div>
+
+    <div id="container">
+      <div id="dasboard">
+        <h1>Request Consultation</h1>
+      </div>
+
+      <div id="isi">
+        <div class="row-3">
+            <div class="row-3-1">
+                <p>Do you have disease history </p>
+            </div>
+         
+          <div class="row-3-2">
+          <select >
+            <option value="1">yes i have</option>
+            <option value="2">no, i don't have</option>
+          </select>
+        </div>
+        </div>
+        <textarea id="input"cols="80"rows="10"placeholder="   Describe your disease history"></textarea>
+
+        <div class="row-5">
+            <div class="row-5-1">
+                <p>Do you have disease history </p>
+            </div>
+         
+        <div class="row-5-2">
+          <select >
+            <option value="3">yes i have</option>
+            <option value="4">no, i don't have</option>
+          </select>
+        </div>
+
+          </div>
+
+        <button id="btn">Send Request</button>
+
+      </div>
+
+    
+    </div>
+  </body>
+</html>

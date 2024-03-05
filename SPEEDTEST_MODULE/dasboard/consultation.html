@@ -1,47 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>consultation</title>
-</head>
-<body>
-    <h1>My consultation</h1>
-    <table border="2px">
-        <thead>
-            <tr>
-                <th colspan="2" align="left">
-                    consultation 
-                </th>
-            </tr>
-            
-        </thead>
-        <tbody>
-            <tr>
-                <td>Status</td>
-                <td>accepted</td>
-            </tr>
-            <tr>
-                <td>disease history</td>
-                <td>diabetes</td>
-            </tr>
-            <tr>
-                <td>current symptoms</td>
-                <td>flu</td>
-            </tr>
-            <tr>
-                <td>doctor name</td>
-                <td>Dr.Ratna Pradipta</td>
-            </tr>
-            <tr>
-                <td>Doctor notes</td>
-                <td>ok</td>
-            </tr>
-            
-        </tbody>
-    </table>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial;
+        box-sizing: border-box;
+      }
 
-    
+      #header {
+        width: 100%;
+        min-height: 50px;
+        background-color: rgb(0, 191, 255);
+      }
+      .header-div {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15%;
+      }
 
-</body>
+      .right-div {
+        display: flex;
+      }
+
+      .teks {
+        padding: 20px;
+        color: white;
+      }
+      #konsul-div {
+        margin-top: 100px;
+        width: 650px;
+        padding-left: 10%;
+      }
+
+      #konsul-div2 {
+        background-color: rgb(223, 223, 223);
+        border: 1px solid lightgray;
+        min-height: 50px;
+        line-height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      #konsul-div3 {
+        background-color: white;
+        border: 1px solid lightgray;
+        min-height: 50px;
+        line-height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      #konsul {
+        padding: 0 10px;
+      }
+
+      .konsul-2 {
+        padding-left: 80px;
+        width: 300px;
+      }
+      #tabel {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header" class="header-div">
+      <p class="teks"><b>vaccination platform</b></p>
+      <div class="right-div">
+        <p class="teks"><b>Marsito kusnawati</b></p>
+        <p class="teks"><b>Log out</b></p>
+      </div>
+    </div>
+
+    <div>
+      <div id="konsul-div">
+        <h2>my consultation</h2>
+        <div id="tabel">
+          <div id="konsul-div3">
+            <h4 id="konsul">Consultation</h4>
+          </div>
+
+          <div id="konsul-div2">
+            <h4 id="konsul">Status</h4>
+            <p class="konsul-2">Accepted</p>
+          </div>
+
+          <div id="konsul-div3">
+            <h4 id="konsul">Disease History</h4>
+            <p class="konsul-2">diabetes</p>
+          </div>
+
+          <div id="konsul-div2">
+            <h4 id="konsul">Curent Symptoms</h4>
+            <p class="konsul-2">flu</p>
+          </div>
+
+          <div id="konsul-div3">
+            <h4 id="konsul">Doctor Name</h4>
+            <p class="konsul-2">Dr.Ratna Pradipta</p>
+          </div>
+
+          <div id="konsul-div2">
+            <h4 id="konsul">Doctor notes</h4>
+            <p class="konsul-2">ok</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
