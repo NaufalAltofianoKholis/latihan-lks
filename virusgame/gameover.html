@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>username</title>
     <style type="text/css">
+
 body{
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-div{
+#container{
     border-radius: 2px;
     background-color: rgb(34, 34, 41);
     width: 300px;
-    height: 250px;
+    height: 200px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 150px;
@@ -22,26 +23,19 @@ div{
 }
 
 
-div.konten{
-    padding:20px
+.konten{
+    padding:10px;
 }
 
 h3{
+    text-align: center;
     color: white;
 }
 
-.instruksi{
-    margin-left: -20px;
+.konten-2{
+    line-height:5px;
+    text-align: center;
     color: white; 
-}
-
-li{
-    padding-bottom: 5px;
-}
-
-#username{
-    width: 250px;
-    margin-left:20px;
 }
 
 #btn{
@@ -49,25 +43,21 @@ li{
     color: white;   
     width: 180px;
     height: 30px;
-    margin : 10px 60px;
+    margin : 10px 50px;
 
 }
     </style>
 <body>
-    <div>
+    <div id="container">
         <div class="konten">
-        <h3>Instuction Virus Slayer </h3>
-        <ol class="instruksi">
-            <li>Input Username and click Play</li>
-            <li>Destroy Virus with D F J K Key</li>
-            <li>Reach High Score</li>
-            <li>Enjoy</li>
-        </ol>
-        
-
-        <input type="text" id="username" placeholder="Input Username">
-        <br>
-        <button id="btn"><b>Play</b></button>
+        <h3>Game Over</h3>
+         <div class="konten-2">
+            <p>Time 06:50 </p>
+            <p>Score : 14</p>
+            <p>Player : Robert</p>
+         </div>   
+         
+        <button id="btn"><b>Restart</b></button>
          </div>
     </div>
 </body>
