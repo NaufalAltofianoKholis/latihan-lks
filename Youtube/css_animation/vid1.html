@@ -5,18 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animation</title>
     <style type="text/css">
+        body{
+            background-color: black;
+        }
         #box{
             width: 250px;
             height: 250px;
             background-color:red;
             font-size: 13em;
             text-align: center;
-            animation-name: rotate;
-            animation-duration: 3s;
+            animation-name: slideLeft;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction:alternate-reverse;
+            animation-play-state: running;
+            animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+           
+            /* opacity: 0; */
         }
-
+        
         @keyframes slideLeft {
-            from{transform: translateX(100%);}
+            from{transform: translateX(200%);}
         }
         @keyframes slideRight {
             to{transform: translateX(100%);}
@@ -29,8 +38,30 @@
         }
 
         @keyframes rotate {
-            10%{transform: rotateX(360deg);}
+            50%{transform: rotateX(360deg);}
         }
+        @keyframes grow {
+            50%{transform: scale(2,2);}
+        }
+        
+        @keyframes shrink {
+            50%{transform: scale(0.5,0.5);}
+        }
+        @keyframes fadeIn {
+            100%{opacity: 1}
+        }
+        @keyframes colorchange {
+            0%{background-color:red;}
+            20%{background-color:blue;}
+            40%{background-color:green;}
+            60%{background-color:yellow;}
+            80%{background-color:aqua;}
+            100%{background-color:purple;}
+        }
+        @keyframes glow {
+            50% {box-shadow: 0px 0px 50px yellow;}
+        }
+        
     </style>
 </head>
 <body>
